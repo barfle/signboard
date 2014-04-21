@@ -1,9 +1,7 @@
-dataplicity controlled stockticker signboard on AM03127
-=======================================================
+Building a Cloud-controlled stockticker with dataplicity
+========================================================
 
-Today I built a dataplicity-enabled stock ticker with a Raspberry Pi and a signboard I picked up at Maplins for £50 or so.  
-
-Via the dataplicity website I can control the signboard brightness, scrolling speed, and of course which stocks I want to display.  Most of the fields in the user interface are drop down boxes and control the display and speed of the ticker.  The first field is a text box where I add tickers one at a time, separated by a space.  The Raspberry Pi then collects settings from the server, retrieves the stock data from Yahoo, and renders them appropriately on the signboard.
+Today I built a dataplicity-enabled stock ticker with a Raspberry Pi and a signboard I picked up at Maplins for £50 or so.  With dataplicity I can control the signboard brightness, scrolling speed, and of course which stocks I want to display.  Once configured, the Raspberry Pi then retrieves relevant stock data from Yahoo, and renders them appropriately.
 
 I've made the dataplicity project public so anyone can build it, or on it, as they please :)
 
@@ -28,6 +26,8 @@ Next, I modified dataplicity.conf to define a new device class, in this case "pr
 User interface
 ==============
 Next up was to modify the ui.xml to replace the sinewave example stuff with a textbox to specify the stocks, and dropdowns to select all the display options.  The final ui.xml is in this repository.
+
+Most of the fields in the user interface are drop down boxes and control the display and speed of the ticker.  The first field is a text box where I add tickers one at a time, separated by a space.  
 
 This is what the finished UI looks like:
 ![Finished signboard user interface](/images/signboard-web.png)
