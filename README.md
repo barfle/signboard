@@ -30,7 +30,7 @@ User interface
 Next up was to modify the ui.xml to replace the sinewave example stuff with a textbox to specify the stocks, and dropdowns to select all the display options.  The final ui.xml is in this repository.
 
 This is what the finished UI looks like:
-![Finished signboard user interface](/images/signboard-web.jpg)
+![Finished signboard user interface](/images/signboard-web.png)
 
 Controlling the signboard
 =========================
