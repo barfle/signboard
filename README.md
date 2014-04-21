@@ -3,7 +3,7 @@ dataplicity controlled stockticker signboard on AM03127
 
 Today I built a dataplicity-enabled stock ticker with a Raspberry Pi and a signboard I picked up at Maplins for £50 or so.  
 
-Via the dataplicity website I can control the signboard brightness, scrolling speed, and of course which stocks I want to display.  
+Via the dataplicity website I can control the signboard brightness, scrolling speed, and of course which stocks I want to display.  Most of the fields in the user interface are drop down boxes and control the display and speed of the ticker.  The first field is a text box where I add tickers one at a time, separated by a space.  The Raspberry Pi then collects settings from the server, retrieves the stock data from Yahoo, and renders them appropriately on the signboard.
 
 I've made the dataplicity project public so anyone can build it, or on it, as they please :)
 
@@ -30,7 +30,7 @@ User interface
 Next up was to modify the ui.xml to replace the sinewave example stuff with a textbox to specify the stocks, and dropdowns to select all the display options.  The final ui.xml is in this repository.
 
 This is what the finished UI looks like:
-![Finished signboard user interface](/images/signboard-complete.jpg)
+![Finished signboard user interface](/images/signboard-web.jpg)
 
 Controlling the signboard
 =========================
@@ -40,7 +40,11 @@ The only remaining step was to stitch it all together, which I did in a couple o
 
 Result!
 =======
-Now I have a stock ticker!  I'm not sure what I'm going to do with it yet but having a stock ticker in my lounge room does make for some interesting conversations with friends. :-)
+Now I have a stock ticker!  
+
+![Finished signboard](/images/signboard-small.jpg)
+
+I'm not sure what I'm going to do with it yet but having a stock ticker in my lounge room does make for some interesting conversations with friends. :-)
 
 All in, it took a few hours to work my way around the signboard documentation (including finding it in the first place), and about an hour to get the dataplicity UI looking sharp.  
 
