@@ -1,0 +1,62 @@
+<ui>
+    <interface id="dataplicity">
+        <mastertabcontainer title="${device.name}" id="top-tabs">
+            <tab title="Settings">
+                <form button="Update" title="Signboard parameters">
+                  <textedit title="Stocks" source="device.settings.signboard.lcd.stocks" destination="device.settings.signboard.lcd.stocks"/>
+                  <select title="Brightness" value="${device.settings.signboard.lcd.brightness}" destination="device.settings.signboard.lcd.brightness">
+                    <option value="D">25%</option>
+                    <option value="C">50%</option>
+                    <option value="B">75%</option>
+                    <option value="A">100%</option>
+                  </select>  
+                  <select title="Leading effect" value="${device.settings.signboard.lcd.lead}" destination="device.settings.signboard.lcd.lead">
+                    <option value="A">Immediate display</option>
+                    <option value="B">Cross open</option>
+                    <option value="C">Curtain up</option>
+                    <option value="D">Curtain down</option>
+                    <option value="E">Scroll left</option>
+                    <option value="F">Scroll right</option>
+                    <option value="G">V open</option>
+                    <option value="H">V close</option>
+                    <option value="I">Scroll up</option>
+                    <option value="J">Scroll down</option>
+                    <option value="K">Hold</option>
+                    <option value="L">Snow</option>
+                    <option value="M">Twinkle</option>
+                    <option value="N">Block move</option>
+                    <option value="P">Random</option>
+                  </select>  
+                  <select title="Speed" value="${device.settings.signboard.lcd.speed}" destination="device.settings.signboard.lcd.speed">
+                    <option value="q">Slowest</option>
+                    <option value="a">Middle slow</option>
+                    <option value="Q">Middle fast</option>
+                    <option value="A">Fastest</option>
+                  </select>  
+                  <select title="Wait time (seconds)" value="${device.settings.signboard.lcd.wait}" destination="device.settings.signboard.lcd.wait">
+                    <option value="A">0.5</option>
+                    <option value="B">1</option>
+                    <option value="C">2</option>
+                    <option value="D">3</option>
+                    <option value="E">4</option>
+                    <option value="F">5</option>
+                    <option value="K">10</option>
+                  </select>  
+                  <select title="Tailing effect" value="${device.settings.signboard.lcd.lag}" destination="device.settings.signboard.lcd.lag">
+                    <option value="A">Immediate display</option>
+                    <option value="B">Cross open</option>
+                    <option value="C">Curtain up</option>
+                    <option value="D">Curtain down</option>
+                    <option value="E">Scroll left</option>
+                    <option value="F">Scroll right</option>
+                    <option value="G">V open</option>
+                    <option value="H">V close</option>
+                    <option value="I">Scroll up</option>
+                    <option value="J">Scroll down</option>
+                    <option value="K">Hold</option>
+                  </select>
+                </form>
+            </tab>
+        </mastertabcontainer>
+    </interface>
+</ui>
