@@ -1,6 +1,6 @@
 <ui>
     <interface id="dataplicity">
-        <mastertabcontainer title="${device.name}" id="top-tabs">
+        <mastertabcontainer title="${device.name}" id="dataplicity-tabs">
             <tab title="Settings">
                 <form button="Update" title="Signboard parameters">
                   <textedit title="Stocks" source="device.settings.signboard.lcd.stocks" destination="device.settings.signboard.lcd.stocks"/>
