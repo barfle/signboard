@@ -11,6 +11,7 @@ class SignboardTask(Task):
 
     def on_startup (self):
         self.sign = AM03127()
+        self.stocks = ""
 
     def poll(self):
         """Called on a schedule defined in dataplicity.conf"""
